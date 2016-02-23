@@ -208,7 +208,6 @@ body {
 .plugin-body {
   height: 300px;
   font-size: 12px;
-  padding: 10px;
   line-height: 7px;
   overflow: auto;
   border-top: 1px solid #ececec;
@@ -307,7 +306,7 @@ table
 {
   font-size: 10px;
   margin: 0;
-  min-width: 400px;
+  min-width: 370px;
   border-collapse: collapse;
   text-align: left;
   table-layout:fixed;

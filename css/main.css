@@ -168,6 +168,7 @@ body {
 .plugin {
   float: left;
   padding: 0;
+  width: 380px;
   background-color: #FFFFFF;
   color: black;
   text-align: center;

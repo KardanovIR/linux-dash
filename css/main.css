@@ -193,7 +193,7 @@ body {
 .plugin .top-bar {
   height: 25px;
   max-width: 100%;
-  padding: 20px;
+  padding: 5px;
   letter-spacing: .1rem;
   line-height: 1.3rem;
   font-size: 11px;
@@ -206,10 +206,10 @@ body {
   padding: 0px;
 }
 .plugin-body {
-  height: 400px;
+  height: 300px;
   font-size: 12px;
   padding: 10px;
-  line-height: 30px;
+  line-height: 7px;
   overflow: auto;
   border-top: 1px solid #ececec;
 }

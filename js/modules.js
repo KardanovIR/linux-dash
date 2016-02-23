@@ -6,52 +6,6 @@
   ////////////////// Module Directives /////////////////// //
   ///////////////////////////////////////////////////////////
 
-  angular.module('linuxDash').directive('diskSpace', ['server', function(server) {
-    return {
-      restrict: 'E',
-      scope: {},
-      templateUrl: 'templates/modules/disk-space.html',
-      link: function(scope) {
-
-        scope.heading = "Disk Partitions";
-
-        scope.getData = function() {
-          server.get('disk_partitions', function(serverResponseData) {
-            scope.diskSpaceData = serverResponseData;
-          });
-
-          scope.lastGet = new Date().getTime();
-        };
-
-        scope.getData();
-
-        scope.getKB = function(stringSize) {
-          var lastChar = stringSize.slice(-1),
-            size = parseInt(stringSize);
-
-          switch (lastChar) {
-            case 'M':
-              return size * Math.pow(1024, 1);
-            case 'G':
-              return size * Math.pow(1024, 2);
-            case 'T':
-              return size * Math.pow(1024, 3);
-            case 'P':
-              return size * Math.pow(1024, 4);
-            case 'E':
-              return size * Math.pow(1024, 5);
-            case 'Z':
-              return size * Math.pow(1024, 6);
-            case 'Y':
-              return size * Math.pow(1024, 7);
-            default:
-              return size;
-          }
-        };
-      }
-    };
-  }]);
-
   angular.module('linuxDash').directive('ramChart', ['server', function(server) {
     return {
       restrict: 'E',

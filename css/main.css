@@ -1,6 +1,7 @@
 /***** Template ****/
 * {
-  font-family: 'Merriweather', Arial, sans-serif;
+  font-family: Tahoma, Arial, sans-serif;
+	font-weight: 500;
   letter-spacing: .1rem;
 	box-sizing: border-box;
 }
@@ -209,6 +210,7 @@ body {
 .plugin-body {
 	display: inline-block;
 	height: 300px;
+	width: 390px;
 	font-size: 12px;
 	line-height: 7px;
 	overflow: auto;
@@ -308,7 +310,7 @@ table
 {
 	font-size: 10px;
 	margin: 0;
-	min-width: 395px;
+	min-width: 385px;
 	border-collapse: collapse;
 	text-align: left;
 	table-layout: fixed;
